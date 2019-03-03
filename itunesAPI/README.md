@@ -1,1 +1,1 @@
-General queries to utilize Itunes Search API
+Accessing the Itunes Search API with simple queries
