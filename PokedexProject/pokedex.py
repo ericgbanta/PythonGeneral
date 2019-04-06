@@ -19,7 +19,7 @@ class PokeDex(QtWidgets.QWidget):
         self.setLayout(self.grid)
 
         # Parse JSON for DataFrame and sort by index
-        self.df = pd.read_json(r'H:\Projects\Data Science\Poke\PokemonData.json')
+        self.df = pd.read_json(r'PokemonData.json')
         self.df.sort_index(inplace=True)
         self.df = self.df.set_index(['#'])
 
