@@ -54,9 +54,9 @@ df
 
 
 # %% Store Data to JSON file
-df.to_json(r'H:\Projects\Data Science\Poke\PokemonData.json')
+df.to_json(r'PokemonData.json')
 
 # %% Peek at json file
-pokemon = pd.read_json(r'H:\Projects\Data Science\Poke\PokemonData.json')
+pokemon = pd.read_json(r'PokemonData.json')
 pokemon = pokemon.set_index(['#'])
 pokemon.head()
