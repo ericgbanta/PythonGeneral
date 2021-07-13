@@ -60,3 +60,6 @@ df.to_json(r'PokemonData.json')
 pokemon = pd.read_json(r'PokemonData.json')
 pokemon = pokemon.set_index(['#'])
 pokemon.head()
+
+# %% Save as CSV
+pokemon.to_csv('PokemonData.csv')
