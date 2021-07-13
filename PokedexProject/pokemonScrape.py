@@ -7,7 +7,7 @@ import pandas as pd
 # %% See website
 url = 'http://pokemondb.net/pokedex/all'
 driver = webdriver.Chrome(
-    executable_path=r'C:\Users\eric.banta\Downloads\chromedriver_win32\chromedriver.exe')
+    executable_path=r'/Users/eric/Documents/zz-other/chromedriver')
 driver.get(url)
 
 
@@ -60,3 +60,8 @@ df.to_json(r'PokemonData.json')
 pokemon = pd.read_json(r'PokemonData.json')
 pokemon = pokemon.set_index(['#'])
 pokemon.head()
+
+# %% Save as CSV
+pokemon.to_csv('PokemonData.csv')
+
+# %%
