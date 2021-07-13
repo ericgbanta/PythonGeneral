@@ -73,7 +73,7 @@ class PokeDex(QtWidgets.QWidget):
         hp = 'HP:\t\t\t' + str(self.df[cond]['HP'].values[0]) + '\n\n'
         atk = 'Attack:\t\t\t' + str(self.df[cond]['Attack'].values[0]) + '\n\n'
         satk = 'Sp. Attack:\t\t' + str(self.df[cond]['Sp. Atk'].values[0]) + '\n\n'
-        deff = 'Defense:\t\t\t' + str(self.df[cond]['Defense'].values[0]) + '\n\n'
+        deff = 'Defense:\t\t' + str(self.df[cond]['Defense'].values[0]) + '\n\n'
         sdef = 'Sp. Defense:\t\t' + str(self.df[cond]['Sp. Def'].values[0]) + '\n\n'
         speed = 'Speed:\t\t\t' + str(self.df[cond]['Speed'].values[0]) + '\n\n'
         total = 'Total:\t\t\t' + str(self.df[cond]['Total'].values[0]) + '\n\n'

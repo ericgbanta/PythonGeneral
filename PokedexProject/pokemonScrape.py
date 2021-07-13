@@ -7,7 +7,7 @@ import pandas as pd
 # %% See website
 url = 'http://pokemondb.net/pokedex/all'
 driver = webdriver.Chrome(
-    executable_path=r'C:\Users\eric.banta\Downloads\chromedriver_win32\chromedriver.exe')
+    executable_path=r'/Users/eric/Documents/zz-other/chromedriver')
 driver.get(url)
 
 
@@ -63,3 +63,5 @@ pokemon.head()
 
 # %% Save as CSV
 pokemon.to_csv('PokemonData.csv')
+
+# %%
